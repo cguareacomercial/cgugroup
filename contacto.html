@@ -152,68 +152,83 @@ Solicitar propuesta
 
     </div>
 
-    <div class="contact-form-wrapper">
+    <form
+    class="contact-form"
+    id="propuesta"
+    action="https://formsubmit.co/cguareacomercial@gmail.com"
+    method="POST">
 
-        <form class="contact-form" id="propuesta">
+    <!-- Configuración FormSubmit -->
+    <input type="hidden" name="_subject" value="Nueva consulta desde CGU Group">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
 
-            <input
-            type="text"
-            placeholder="Nombre completo">
+    <input
+        type="text"
+        name="nombre"
+        placeholder="Nombre completo"
+        required>
 
-            <input
-            type="text"
-            placeholder="Empresa">
+    <input
+        type="text"
+        name="empresa"
+        placeholder="Empresa">
 
-            <input
-            type="text"
-            placeholder="Cargo">
+    <input
+        type="text"
+        name="cargo"
+        placeholder="Cargo">
 
-            <input
-            type="email"
-            placeholder="Email">
+    <input
+        type="email"
+        name="email"
+        placeholder="Email"
+        required>
 
-            <input
-            type="tel"
-            placeholder="Teléfono">
+    <input
+        type="tel"
+        name="telefono"
+        placeholder="Teléfono">
 
-            <select>
+    <select name="tipo_proyecto" required>
 
-                <option>
-                    Tipo de proyecto
-                </option>
+        <option value="" selected disabled>
+            Tipo de proyecto
+        </option>
 
-                <option>
-                    Cartelería
-                </option>
+        <option value="Cartelería">
+            Cartelería
+        </option>
 
-                <option>
-                    Metalurgia
-                </option>
+        <option value="Metalurgia">
+            Metalurgia
+        </option>
 
-                <option>
-                    Servicios Técnicos
-                </option>
+        <option value="Servicios Técnicos">
+            Servicios Técnicos
+        </option>
 
-                <option>
-                    Licitación
-                </option>
+        <option value="Licitación">
+            Licitación
+        </option>
 
-                <option>
-                    Otro
-                </option>
+        <option value="Otro">
+            Otro
+        </option>
 
-            </select>
+    </select>
 
-            <textarea
-            placeholder="Contanos sobre tu proyecto"></textarea>
+    <textarea
+        name="mensaje"
+        placeholder="Contanos sobre tu proyecto"
+        required>
+    </textarea>
 
-            <button>
-                Solicitar propuesta
-            </button>
+    <button type="submit">
+        Solicitar propuesta
+    </button>
 
-        </form>
-
-    </div>
+</form>
 
 </section>
 
